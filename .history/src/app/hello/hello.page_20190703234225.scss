@@ -1,0 +1,47 @@
+.content {
+  width: 100%;
+  height: 50vw;
+  position: relative;
+  background: linear-gradient(to bottom, #37e7fd, #3bafee);
+  box-shadow: 0 0 6px #d8d8d8;
+  .header {
+    width: 100%;
+    display: flex;
+    .profile-picture {
+        margin-left: 3vw;
+      width: 30vw;
+      height: 30vw;
+      padding: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .text-box {
+      width: 100%;
+      height: 30vw;
+      padding: 7vw 0;
+      color: white;
+      .text {
+        font-size: 6vw;
+      }
+      .name {
+        font-size: 4vw;
+      }
+    }
+    .close-button {
+      width: 30vw;
+      height: 30vw;
+      padding: 8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.clou

@@ -1,0 +1,22 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios" class="header">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{data.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <!-- <div class="top-box">
+    <img src="./assets/icon/top_img1.svg" alt="">
+  </div> -->
+
+    <div class="title" [innerHTML]="data.content">
+
+    </div>
+
+
+</ion-content>

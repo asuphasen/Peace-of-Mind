@@ -1,0 +1,168 @@
+.bg-content {
+  background-color: #1dc1f4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-content{
+  --background: #1dc1f4;
+}
+.header {
+  position: relative;
+  width: 100%;
+  img {
+    width: 7vw;
+    margin-left: 6vw;
+    margin-top: 6vw;
+  }
+}
+.buddist {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-box {
+  width: 100%;
+  // height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  img {
+    width: 20vw;
+  }
+}
+.logo-box {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 3vw;
+  font-size: 6vw;
+  color: white;
+}
+.text {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  color: white;
+}
+.login-input-box {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-feild {
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  //   flex-direction: row;
+  display: flex;
+  margin-top: 3vw;
+  border-radius: 50px;
+  .img-box {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    img {
+      width: 100%;
+    }
+  }
+  .input-text {
+    margin-left: 2vw;
+    font-size: 4vw;
+    flex: 1;
+    text-align: left;
+    color: #777777;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+.login-tab {
+  transition: 0.5s all;
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  background: #1dc1f4;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.login-tab:active:hover{
+  transform: scale(0.9)
+}
+
+.bars {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: scale(2);
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.bars div {
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  bottom: -29px;
+}
+.bar1 {
+  height: 10px;
+  width: 5px;
+  animation: 1s loader infinite;
+  animation-delay: 0;
+}
+.bar2 {
+  height: 10px;
+  width: 5px;
+  animation: 1s loader infinite;
+  animation-delay: 0.3s;
+}
+.bar3 {
+  height: 25px;
+  width: 5px;
+  animation: 1s loader infinite;
+  animation-delay: 0.5s;
+}
+.bar4 {
+  height: 10px;
+  width: 5px;
+  animation: 1s loader infinite;
+  animation-delay: 0.7s;
+}
+@keyframes loader {
+  0% {
+    height: 10px;
+    bottom: -29px;
+  }
+  50% {
+    height: 25px;
+    bottom: -29px;
+  }
+  100% {
+    height: 10px;
+    bottom: -29px;
+  }
+}

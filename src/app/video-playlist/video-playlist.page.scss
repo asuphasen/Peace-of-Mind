@@ -1,0 +1,121 @@
+.top-box {
+  width: 100vw;
+  height: 60vw;
+  position: fixed;
+  z-index: 1;
+  .icon-back {
+    position: absolute;
+    z-index: 888;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    z-index: 3;
+  }
+  .img-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+}
+.float-box {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 48vw;
+  z-index: 999;
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 24vw;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    .top {
+      font-size: 20px;
+      font-weight: bold;
+      flex: 1;
+    }
+    .bottom {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+}
+.content-list {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 60vw);
+  margin-top: 60vw;
+  background: #f2f2f2;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12vw 20px 0 20px;
+  .list-card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 20vw;
+    scrollbar-width: 0;
+    border-right: 5px solid #4b4b4b;
+    margin-bottom: 10px;
+    .img-preview {
+      width: 30vw;
+      height: 100%;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 100%;
+      }
+    }
+    .track-detail {
+      width: 60vw;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px 10px 0;
+      overflow: hidden;
+      margin-left: 10px;
+      .name {
+        font-size: 16px;
+        font-weight: 700;
+
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .vdo-lenght {
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.play:hover {
+  animation: ma 5s infinite linear;
+}
+@keyframes ma {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+.play {
+  animation-play-state: paused;
+}

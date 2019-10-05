@@ -1,0 +1,144 @@
+.header-bar {
+  width: 100%;
+  height: 15vw;
+  position: relative;
+  background-color: #1dc1f4;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.34);
+  .back-box {
+    width: 15vw;
+    padding: 5vw;
+    position: absolute;
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+  }
+}
+.list-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .detail-box {
+    display: flex;
+    justify-content: left;
+    // align-items: center;
+    flex-direction: column;
+    flex: 1;
+    .text-name {
+      margin-top: 2vw;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .text-score {
+      margin-top: 2vw;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      flex-direction: row;
+      color: #1dc1f4;
+      font-size: 24px;
+    }
+    .text-cost {
+      margin-top: 2vw;
+      font-size: 16px;
+      color: #1dc1f4;
+    }
+  }
+  .img-box {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+.line {
+  height: 1px;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  width: 100%;
+  background-color: rgb(112, 112, 112);
+  opacity: 0.33;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.34);
+}
+.contact {
+  width: 50%;
+  height: 10vw;
+  border-radius: 100px;
+  border: 2px solid #1dc1f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  color: #1dc1f4;
+  margin-top: 3vw;
+}
+
+.comment-box {
+  width: 100%;
+  //   display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  .name-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 6vw;
+      }
+    }
+    .name-box {
+      margin-left: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: 3vw;
+      flex: 1;
+      justify-content: left;
+      display: flex;
+      align-items: center;
+      font-size: 4vw;
+      color: gray;
+    }
+  }
+  .score-box {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    img {
+      width: 4vw;
+    }
+  }
+  .comment-text {
+    margin-top: 2vw;
+    font-size: 4vw;
+  }
+}
+.header {
+  --background: #1dc1f4;
+  color: #fff;
+}
+
+

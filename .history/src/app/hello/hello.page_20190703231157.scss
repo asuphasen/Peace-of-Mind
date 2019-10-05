@@ -1,0 +1,25 @@
+.content {
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    background: linear-gradient(to bottom, #37E7FD, #3BAFEE);
+    box-shadow: 0 0 6px #d8d8d8;
+    .header{
+        width: 100%;
+        .profile-picture{
+            width: 40vw;
+            padding: 0;
+            img{
+                width: 100%;
+            }
+        }
+        .text-box{
+            .text{
+                font-size: 5vw;
+            }
+            .name{
+                
+            }
+        }
+    }
+  }

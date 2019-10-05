@@ -1,0 +1,54 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>playlist</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="bg-blue">
+    <div class="top-bar">
+      <div class="back-box">
+        <img src="./assets/icon/left-arrow.svg" alt="" (click)="back()">
+      </div>
+      <div class="title">
+        รวมเพลย์ลิสต์เพลงฟังสบายหูผ่อนคลายสมอง
+      </div>
+    </div>
+
+    <div class="date-text">
+      10/04/2562 11.10น.
+    </div>
+
+    <div class="date-text">
+      &nbsp;&nbsp;&nbsp; คุณกำลังเบื่ออยู่ใช่ไหมล่ะ? จะออกไปข้องนอกอากาศก็ร้อนแทบจะละลาย นี่เลย
+      เราจัดเพลย์ลิสต์นี้มาให้คุณกับ 10 บทเพลงเพราะ ฟังสบายหู
+    </div>
+
+    <div class="track-content">
+        <!-- (click)="switchButton(i)" -->
+      <div class="track-box" *ngFor="let item of items ; let i = index;" (click)="playAudio('https://firebasestorage.googleapis.com/v0/b/peace-of-mind-3efe6.appspot.com/o/video%2FVDO%2FNature%20sounds%20Meditation%20forest%20sounds%20of%20birds%20singing%20relaxation%20-%204%20minutes.mp3?alt=media&token=05936bac-54e6-4858-8efd-11963eb5bb78')">
+        <div class="track-name" *ngIf="!button[i]">
+          {{item.name}} - {{item.artist}}
+        </div>
+        <div class="track-name" *ngIf="button[i]" style="color: #1dc1f4">
+          {{item.name}} - {{item.artist}}
+        </div>
+        <div class="track-icon">
+          <img *ngIf="!button[i]" src="./assets/icon/play-button.svg" alt="">
+          <img *ngIf="button[i]" src="../../assets/icon/pause-button.svg" alt="">
+        </div>
+      </div>
+      <!-- <ion-button  color="primary">
+        PLAY AUDIO
+      </ion-button> -->
+
+    </div>
+
+
+
+
+  </div>
+  <div class="big-circle"></div>
+
+
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>ผลการประเมิน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="circle"></div>
+
+  <div class="score-box">
+    <div class="score">{{score}}</div>
+    <div class="point">คะแนน</div>
+  </div>
+
+  <div class="text1">ระดับคะแนนของคุณอยู่ในช่วง {{score_text}}</div>
+
+  <div class="detail-box">
+    <div class="head">ผลการทดสอบ</div>
+    <div class="content">{{result_text}}</div>
+  </div>
+
+  <div class="detail-box">
+    <div class="head">ข้อแนะนำในการดูแล</div>
+    <div class="content">ควรพักผ่อนให้เพียงพอ นอนหลับพักผ่อนให้
+      เพียงพอ อย่างน้อย 6-8 ชั่วโมง ออกกำลัง
+      กายอย่างสม่ำเสมอ ทำกิจกรรมที่ช่วยให้ ผ่อนคลายพบปะเพื่อนฝูง ควรทำแบบประเมินอีกครั้งใน 1 สัปดาห์</div>
+  </div>
+
+  <div class="reg-tab" (click)="gotoHello()">
+    กลับหน้าแรก
+  </div>
+</ion-content>

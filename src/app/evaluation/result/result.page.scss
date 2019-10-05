@@ -1,0 +1,80 @@
+.circle {
+  width: 150vw;
+  height: 100vw;
+  position: fixed;
+  background: #1dc1f4;
+  top: -50vw;
+  left: -25vw;
+  border-radius: 50%;
+  z-index: 0;
+}
+.score-box {
+  width: 60vw;
+  height: 60vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: #fff;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  .score {
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: #1dc1f4;
+    flex: 1;
+  }
+  .point {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #3d3d3d;
+  }
+}
+.text1 {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #3d3d3d;
+  position: relative;
+}
+
+.detail-box {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+  .head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+    position: relative;
+  }
+  .content {
+    font-size: 16px;
+    color: #1dc1f4;
+    text-align: center;
+    position: relative;
+  }
+}
+.reg-tab {
+  transition: 0.5s all ease;
+  width: 85%;
+  height: 13vw;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px #999999;
+  color: white;
+  background-color: #1dc1f4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+}
+.reg-tab:active:hover {
+  transform: scale(0.9);
+}

@@ -1,0 +1,111 @@
+<!-- <ion-header>
+  <ion-toolbar >
+    <ion-title>hello</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="content">
+    <div class="header">
+      <div class="profile-picture">
+        <img src="./assets/icon/user-profile.svg" alt="">
+      </div>
+      <div class="text-box">
+        <div class="text">
+          สวัสดี
+        </div>
+        <div class="name">
+          คุณจิตใจ ดีงาม
+        </div>
+      </div>
+      <div class="close-button">
+        <!-- <img src="./assets/icon/shutdown.svg" alt="" (click)="gotoLogin()"> -->
+        <ion-icon ios="ios-log-out" md="md-log-out" style="font-size: 30px; color: #fff; z-index: 999;" (click)="gotoLogin()"></ion-icon>
+      </div>
+    </div>
+
+    <div class="cloud">
+      <img src="./assets/icon/cloud.svg" alt="">
+    </div>
+  </div>
+
+  <div class="box-content">
+    <div style="padding: 15px;">
+      <div class="box" (click)="gotoEvaluation()">
+        <div class="img-box">
+          <img src="../../assets/evaluation-form.jpg" alt="">
+        </div>
+        <div class="text-box">
+          แบบประเมินโรคซึมเศร้า
+        </div>
+      </div>
+    </div>
+
+    <div class="tab">
+      เกร็ดความรู้
+    </div>
+
+    <div class="slide-top">
+      <ion-slides [options]="slideOpts">
+        <ion-slide class="image-slide" *ngFor="let item of tips ; let i = index">
+          <div class="square-box" (click)="gotoDetails(item)">
+            <img src="{{item.icon}}" alt="">
+            <div class="slide-text">
+              {{item.title}}
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <div class="tab2">
+      สนุกเพลิดเพลินไปกับเรา
+    </div>
+    <div class="slide-top2">
+      <ion-slides [options]="slideOpts">
+        <ion-slide class="image-slide" *ngFor="let item2 of funs ; let i = index" (click)="gotoPlaylist(item2.path)">
+          <div class="square-box">
+            <img src="{{item2.img}}" alt="">
+            <div class="slide-text">
+              {{item2.text}}
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <!-- <div style="padding: 15px;">
+      <div class="box" style="background-color: #BEEBFF" (click)="gotoDoctorList()">
+        <div class="img-box">
+          <img src="../../assets/consulting-doctor.jpg" alt="">
+        </div>
+        <div class="consult-text">
+          ปรึกษาแพทย์
+        </div>
+      </div>
+    </div> -->
+    <div style="padding: 15px;">
+        <div class="box" (click)="gotoDoctorList()">
+          <div class="img-box">
+            <img src="../../assets/consulting-doctor.jpg" alt="">
+          </div>
+          <div class="text-box">
+              ปรึกษาแพทย์
+          </div>
+        </div>
+      </div>
+
+
+    <!-- <div>
+      <input type="text" [(ngModel)]="video_name.title">
+      <input type="text" [(ngModel)]="video_name.url">
+      <input type="text" [(ngModel)]="video_name.img">
+      <button (click)="addVideo()">OK</button>
+    </div> -->
+
+  </div>
+
+
+
+
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="header" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white">แพทย์ที่ปรึกษา</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <div class="header-bar">
+    <div class="back-box">
+      <img src="../../assets/icon/left-arrow.svg" alt="" (click)="back()">
+    </div>
+    <div class="text">
+      แพทย์ปรึกษา
+    </div>
+  </div> -->
+
+  <div style="padding: 5vw;">
+
+
+
+    <!-- Doctor 1 -->
+    <div *ngFor="let item of doctors">
+      <div class="list-box" (click)="gotoDoctorPreview(item)">
+        <div class="detail-box">
+          <div class="text-name">
+            {{item.titlename}}{{item.firstname}} {{item.lastname}}
+          </div>
+          <div class="text-score">
+            <ion-icon class="star" name="star" *ngFor="let i of arrayOne(item.average_rate)"></ion-icon>
+            <ion-icon class="star" name="star-half" *ngIf="getStarHalf(item.average_rate)"></ion-icon>
+            <!-- <img src="./assets/icon/star.svg" alt=""> -->
+          </div>
+          <div class="text-cost">
+            {{item.cost_baht}} บาท/{{item.cost_min}}นาที
+          </div>
+        </div>
+        <div class="img-box">
+          <img src="./assets/icon/user-blue.svg" alt="">
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+
+  </div>
+</ion-content>

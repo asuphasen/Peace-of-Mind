@@ -1,0 +1,7 @@
+{
+  "name": "PeaceOfMind",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

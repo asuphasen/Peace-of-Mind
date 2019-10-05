@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar class="header" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: white">แพทย์ที่ปรึกษา</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="padding: 5vw;">
+
+    <!-- Doctor 1 -->
+    <div class="list-box">
+      <div class="detail-box">
+        <div class="text-name">
+          {{doctor_detail.titlename}}{{doctor_detail.firstname}} {{doctor_detail.lastname}}
+        </div>
+        <div class="text-score">
+          <ion-icon class="star" name="star" *ngFor="let i of arrayOne(doctor_detail.average_rate)"></ion-icon>
+          <ion-icon class="star" name="star-half" *ngIf="getStarHalf(doctor_detail.average_rate)"></ion-icon>
+        </div>
+        <div class="text-cost">
+          {{doctor_detail.cost_baht}} บาท/{{doctor_detail.cost_min}}นาที
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="./assets/icon/user-blue.svg" alt="">
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+      <div class="contact" style="margin-right: 1vw;" (click)="gotoChat()">ติดต่อ</div>
+      <div class="contact" style="margin-left: 1vw;" (click)="popupRating()">ให้คะแนน</div>
+    </div>
+
+    <div class="line"></div>
+
+    <div style="font-size: 5vw; margin: 5vw 0;">ความคิดเห็น</div>
+
+    <div class="comment-box" *ngFor="let item of reviewList">
+      <div class="name-tab">
+        <div class="img-box">
+          <img src="./assets/icon/user-blue.svg" alt="">
+        </div>
+        <div class="name-box">
+          {{item.firstname}} {{item.lastname}}
+        </div>
+        <div class="time-box">
+          {{item.review_time}}
+        </div>
+      </div>
+      <div class="score-box">
+        <ion-icon class="star" name="star" *ngFor="let i of arrayOne(item.rate)"></ion-icon>
+        <ion-icon class="star" name="star-half" *ngIf="getStarHalf(item.rate)"></ion-icon>
+      </div>
+      <div class="comment-text">
+        {{item.comment}}
+      </div>
+
+      <div class="line"></div>
+
+    </div>
+
+
+
+  </div>
+</ion-content>

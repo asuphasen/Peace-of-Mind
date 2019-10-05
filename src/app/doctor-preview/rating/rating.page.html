@@ -1,0 +1,15 @@
+<ion-content padding>
+  <rating class="rating" [(ngModel)]="rate" readonly="false" size="small"
+    (ngModelChange)="onModelChange($event)">
+  </rating>
+  
+  <div class="textarea-box">
+    <!-- <ion-textarea mode="ios" auto-grow="true"  rows="20" columns="6" lines="none" placeholder="คำอธิบาย"></ion-textarea> -->
+    <ion-textarea rows="3" cols="20" maxlength="120" placeholder="แตะเพื่อแสดงความคิดเห็น" [(ngModel)]="comment"></ion-textarea>
+  </div>
+  <div style="display: flex">
+    <ion-button expand="block" class="btn-cancel" (click)="dismiss()">ยกเลิก</ion-button>
+    <ion-button expand="block" class="btn-confirm" (click)="dismissWithDataBack()">ตกลง</ion-button>
+  </div>
+  
+</ion-content>

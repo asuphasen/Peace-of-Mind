@@ -1,0 +1,5 @@
+<svg id="rounded-pause-button" xmlns="http://www.w3.org/2000/svg" width="19.5" height="19.5" viewBox="0 0 19.5 19.5">
+  <g id="pause-circle-outline">
+    <path id="Path_68" data-name="Path 68" d="M6.825,13.65h1.95V5.85H6.825ZM9.75,0A9.75,9.75,0,1,0,19.5,9.75,9.779,9.779,0,0,0,9.75,0Zm0,17.55a7.8,7.8,0,1,1,7.8-7.8A7.823,7.823,0,0,1,9.75,17.55Zm.975-3.9h1.95V5.85h-1.95Z" fill="#3bafee"/>
+  </g>
+</svg>

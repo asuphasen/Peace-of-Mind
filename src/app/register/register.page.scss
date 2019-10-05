@@ -1,0 +1,233 @@
+.bg-content {
+  background-color: #1dc1f4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-content{
+  --background: #1dc1f4;
+}
+.header {
+  position: relative;
+  width: 100%;
+  img {
+    width: 7vw;
+    margin-left: 6vw;
+    margin-top: 6vw;
+  }
+}
+.buddist {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-box {
+  width: 100%;
+  // height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  img {
+    width: 20vw;
+  }
+}
+.logo-box {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 3vw;
+  font-size: 6vw;
+  color: white;
+}
+.text {
+  margin-top: 5vw;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  color: white;
+}
+.login-input-box {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-feild {
+  width: 80%;
+  height: 11vw;
+  background-color: white;
+  //   flex-direction: row;
+  display: flex;
+  margin-top: 3vw;
+  border-radius: 50px;
+  .img-box {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    img {
+      width: 100%;
+    }
+  }
+  .input-text {
+    margin: 0 2vw;
+    font-size: 4vw;
+    flex: 1;
+    text-align: left;
+    color: #777777;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+.login-tab {
+  transition: 0.5s all ease;
+  width: 80%;
+  height: 11vw;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+  font-size: 4vw;
+}
+.login-tab:active:hover{
+  transform: scale(0.9)
+}
+.gender-box {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin-top: 2vw;
+  color: white;
+  .gender-text {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.birthday-box {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+  .birthday-text {
+    color: white;
+    font-size: 4vw;
+    margin-left: 4vw;
+  }
+  .date-input {
+    background-color: white;
+    border-radius: 100px;
+    flex: 1;
+    margin-left: 2vw;
+    display: flex;
+    width: 100%;
+    height: 11vw;
+    justify-content: center;
+    align-items: center;
+    img {
+      position: relative;
+      right: 0;
+      width: 4vw;
+      margin-left: 2vw;
+      margin-right: 4vw;
+    }
+    .datetime {
+      flex: 1;
+      font-size: 4vw;
+      text-align: center;
+    }
+  }
+}
+.radio {
+  --color: white;
+  --color-checked: white;
+  width: 4vw;
+  height: 4vw;
+}
+
+// Blood type
+.box {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  color: white;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+/* hide input */
+input.radio:empty {
+  opacity: 0;
+}
+
+/* style label */
+input.radio:empty ~ label {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.radio:checked ~ label {
+  background: #ffffff;
+  color: #1dc1f4;
+}
+
+.blood {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vw;
+  .blood-title {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    // margin-left: 4vw;
+    color: white;
+  }
+  .type-box {
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      width: 8vw;
+      height: 8vw;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.bg-content{
+    background-color: #1DC1F4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buddist{
+    width: 60%
+    position: absolute;
+}
+.heart-box{
+    width: 100%;
+    // height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    img{
+        width: 20vw;
+    }
+}

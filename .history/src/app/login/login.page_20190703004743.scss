@@ -1,0 +1,48 @@
+.bg-content{
+    background-color: #1DC1F4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buddist{
+    width: 60%;
+    position: absolute;
+}
+.heart-box{
+    width: 100%;
+    // height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    img{
+        width: 20vw;
+    }
+}
+.logo-box{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 3vw;
+    font-size: 6vw;
+    color: white;
+}
+.text{
+    margin-top: 5vw;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 8vw;
+    color: white;
+}
+.login-input-box{
+    width: 100%;
+    margin-top: 3vw;
+}
+.input-feild{
+    width
+}

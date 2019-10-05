@@ -1,0 +1,37 @@
+.content {
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    background: linear-gradient(to bottom, #37E7FD, #3BAFEE);
+    box-shadow: 0 0 6px #d8d8d8;
+    .header{
+        width: 100%;
+        display: flex;
+        .profile-picture{
+            width: 25vw;
+            height: 25vw;
+            padding: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+        .text-box{
+            width: 100%;
+            height: 25vw;
+            padding: 5vw 0;
+            color: 
+            .text{
+                font-size: 6vw;
+            }
+            .name{
+                font-size: 4vw;
+            }
+        }
+        .close-button{
+
+        }
+    }
+  }

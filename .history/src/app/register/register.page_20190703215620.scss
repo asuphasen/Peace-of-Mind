@@ -1,0 +1,146 @@
+.bg-content {
+  background-color: #1dc1f4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  position: relative;
+  width: 100%;
+  img {
+    width: 7vw;
+    margin-left: 6vw;
+    margin-top: 6vw;
+  }
+}
+.buddist {
+  width: 60%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-box {
+  width: 100%;
+  // height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  img {
+    width: 20vw;
+  }
+}
+.logo-box {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 3vw;
+  font-size: 6vw;
+  color: white;
+}
+.text {
+  margin-top: 5vw;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  color: white;
+}
+.login-input-box {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-feild {
+  width: 80%;
+  height: 11vw;
+  background-color: white;
+  //   flex-direction: row;
+  display: flex;
+  margin-top: 3vw;
+  border-radius: 50px;
+  .img-box {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    img {
+      width: 100%;
+    }
+  }
+  .input-text {
+    margin-left: 2vw;
+    font-size: 4vw;
+    flex: 1;
+    text-align: left;
+    color: #777777;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+.login-tab {
+  width: 80%;
+  height: 11vw;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+  font-size: 4vw;
+}
+.gender-box {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin-top: 2vw;
+  color: white;
+  .gender-text {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.birthday-box{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    .birthday-text{
+        color: white;
+        font-size: 4vw;
+        margin-left: 4vw;
+    }
+    .date-input{
+        background-color: white;
+        border-radius: 100px;
+        // flex: 1;
+        margin-left: 2vw;
+        display: flex;
+        img{
+            position: relative;
+            right: 0;
+        }
+    }
+}
+.radio{
+    --color: white;
+    --color-checked: white;
+}

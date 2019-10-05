@@ -1,0 +1,101 @@
+<ion-header>
+    <ion-toolbar class="header" mode="ios">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title style="color: white">แบบประเมินโรคซึมเศร้า</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <!-- <div class="header-bar">
+    <div class="back-box">
+      <img src="../../assets/icon/left-arrow.svg" alt="" (click)="back()">
+    </div>
+    <div class="text">
+      แบบประเมินโรคซึมเศร้า
+    </div>
+  </div> -->
+
+  <div style="padding: 3vw 8vw; position: relative;">
+
+    <div class="title-text">
+      &nbsp;&nbsp;&nbsp; ในช่วง 2 สัปดาที่ผ่านมา รวมทั้งวันนี้ ท่านมีอาการเหล่านี้บ่อยแค่ไหน
+    </div>
+
+    <!-- ข้อที่ 1 -->
+    <div *ngFor="let item of eva_item; let i = index">
+      <!-- <div class="item-tab">
+        <div class="circle">
+          <div class="item-number">{{i+1}}</div>
+        </div>
+        <div class="item-text">
+          {{item.item.text}}
+        </div>
+      </div>
+      <div class="choice-box">
+        <ion-radio-group mode="md">
+          <ion-item class="left"  lines="none">
+            <ion-radio class="radio" value="op1"></ion-radio>
+            <ion-label class="text">{{item.op1.text}}</ion-label>
+          </ion-item>
+          <ion-item class="left"  lines="none">
+            <ion-radio class="radio" value="op2"></ion-radio>
+            <ion-label class="text">{{item.op2.text}}</ion-label>
+          </ion-item>
+          <ion-item class="left"  lines="none">
+            <ion-radio class="radio" value="op3"></ion-radio>
+            <ion-label class="text">{{item.op3.text}}</ion-label>
+          </ion-item>
+          <ion-item class="left"  lines="none">
+            <ion-radio class="radio" value="op4"></ion-radio>
+            <ion-label class="text">{{item.op4.text}}</ion-label>
+          </ion-item>
+        </ion-radio-group>
+      </div> -->
+
+      <div class="item-tab">
+        <div class="circle" [class.active]="item.item.active">
+          <div class="item-number">{{i+1}}</div>
+        </div>
+        <div class="item-text">
+          {{item.item.text}}
+        </div>
+      </div>
+      <!-- item1 -->
+      <div class="item-content" (click)="switchCheck(i,1)">
+        <div class="check-box">
+          <div class="mini-circle" [class.active]="item.op1.status"></div>
+        </div>
+        <div class="option-text">{{item.op1.text}}</div>
+      </div>
+      <!-- item2 -->
+      <div class="item-content" (click)="switchCheck(i,2)">
+        <div class="check-box">
+          <div class="mini-circle" [class.active]="item.op2.status"></div>
+        </div>
+        <div class="option-text">{{item.op2.text}}</div>
+      </div>
+      <!-- item3 -->
+      <div class="item-content" (click)="switchCheck(i,3)">
+        <div class="check-box">
+          <div class="mini-circle" [class.active]="item.op3.status"></div>
+        </div>
+        <div class="option-text">{{item.op3.text}}</div>
+      </div>
+      <!-- item4 -->
+      <div class="item-content" *ngIf="item.op4" (click)="switchCheck(i,4)">
+        <div class="check-box">
+          <div class="mini-circle" [class.active]="item.op4.status"></div>
+        </div>
+        <div class="option-text">{{item.op4.text}}</div>
+      </div>
+    </div>
+
+    <div class="reg-tab" (click)="confirm()">
+      ส่งแบบสอบถาม
+    </div>
+
+  </div>
+
+</ion-content>

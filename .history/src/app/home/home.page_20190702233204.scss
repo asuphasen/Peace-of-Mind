@@ -1,0 +1,24 @@
+.bg-content{
+    background-color: #1DC1F4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.reg-tab{
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px #444444;
+    color: #1DC1F4;
+    background-color: white;
+    position: relative;
+}
+.login-tab{
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: white;
+    position: relative;
+    // background-color: white;
+}

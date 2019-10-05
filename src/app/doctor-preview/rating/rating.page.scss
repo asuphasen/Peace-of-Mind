@@ -1,0 +1,35 @@
+.rating {
+  ion-icon {
+    color: gray;
+
+    &.filled {
+      color: #1dc1f4;
+    }
+  }
+}
+ion-button {
+  --border-radius: 10px;
+  width: 50%;
+}
+.btn-cancel {
+  //   --border: 2px solid #1dc1f4;
+  --background: #fff;
+  color: #1dc1f4;
+  --border-radius: 1000px;
+  width: 50%;
+}
+.btn-confirm {
+  --background: #1dc1f4;
+  --border-radius: 1000px;
+  width: 50%;
+}
+
+.textarea-box {
+  width: 90%;
+  min-height: 60%;
+  ion-textarea {
+    .native-textarea sc-ion-textarea-ios {
+      height: 150px;
+    }
+  }
+}

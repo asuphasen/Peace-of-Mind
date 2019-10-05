@@ -1,0 +1,71 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="bg-content">
+    <div class="buddist">
+      <img src="./assets/icon/buddhist-yoga-pose.svg" alt="">
+    </div>
+  </div>
+
+  <div class="header">
+    <img src="./assets/icon/left-arrow.svg" alt="" (click)="back()">
+  </div>
+
+  <div class="heart-box">
+    <img src="./assets/icon/chat.svg" alt="">
+  </div>
+  <div class="logo-box">
+    Peace of Mind
+  </div>
+
+  <div class="text">
+    สมัครสมาชิก
+  </div>
+
+  <div class="login-input-box">
+    <div class="input-feild">
+      <div class="input-text">
+        <ion-input placeholder="อีเมล"></ion-input>
+      </div>
+    </div>
+    <div class="input-feild">
+      <div class="input-text">
+        <ion-input placeholder="รหัสผ่าน"></ion-input>
+      </div>
+    </div>
+    <div class="input-feild">
+      <div class="input-text">
+        <ion-input placeholder="ชื่อจริง"></ion-input>
+      </div>
+    </div>
+    <div class="input-feild">
+      <div class="input-text">
+        <ion-input placeholder="นาสกุล"></ion-input>
+      </div>
+    </div>
+    <div class="input-feild">
+      <div class="input-text">
+        <ion-input placeholder="เบอร์โทรศัพท์"></ion-input>
+      </div>
+    </div>
+
+    <div class="gender-box">
+      <ion-col>
+        <div class="gender-text">เพศ</div>
+      </ion-col>
+      <ion-col *ngFor="let entry of form">
+        <div style="display: flex; justify-content: center; align-items: center">
+          <ion-label>{{entry.val}}</ion-label>
+          <ion-checkbox mode="ios" style="margin-left: 2vw" slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+        </div>
+      </ion-col>
+
+    </div>
+
+
+  </div>
+</ion-content>

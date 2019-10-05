@@ -1,0 +1,21 @@
+.header-bar{
+    width: 100%;
+    position: relative;
+    background-color: #1DC1F4;
+    flex-direction: row;
+    .back-box{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        fle
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,39 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>video-playlist</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="top-box">
+    <div class="icon-back" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </div>
+    <div class="img-box">
+      <ion-slides [options]="slidesOpts" style="z-index: 0;">
+        <ion-slide *ngFor="let item of images_top">
+          <img src="{{item}}" alt="">
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <div class="float-box">
+    <div class="box">
+      <div class="top">รวมเพลย์ลิสต์วิดีโอโยคะ</div>
+      <div class="bottom">{{list_lenght}} รายการ</div>
+    </div>
+  </div>
+
+  <div class="content-list">
+    <div style="color: #3D3D3D; font-size: 16px; width: 100%; padding: 10px 0;">วีดิโอยอดนิยม</div>
+    <div class="list-card" *ngFor="let item of items" (click)="playVideo(item.url)">
+      <div class="img-preview">
+        <img src="{{item.img}}" alt="">
+      </div>
+      <div class="track-detail">
+        <div class="name">{{item.title}}</div>
+        <div class="vdo-lenght">{{item.time}} น.</div>
+      </div>
+    </div>
+  </div>
+</ion-content>

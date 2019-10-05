@@ -1,0 +1,18 @@
+.header-bar{
+    width: 100%;
+    position: relative;
+    background-color: #1DC1F4;
+    flex-direction: row;
+    display: flex;
+    .back-box{
+        width: 15vw;
+        padding: 5vw;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        flex: 1;
+        text
+    }
+}

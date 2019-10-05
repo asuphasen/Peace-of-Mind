@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>playlist</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="bg-blue">
+    <div class="top-bar">
+      <div class="back-box">
+        <img src="./assets/icon/left-arrow.svg" alt="">
+      </div>
+      <div class="title">
+        รวมเพลย์ลิสต์เพลงฟังสบายหูผ่อนคลายสมอง
+      </div>
+    </div>
+
+    <div class="date-text">
+      10/04/2562 11.10น.
+    </div>
+
+    <div class="date-text">
+      &nbsp;&nbsp;&nbsp; คุณกำลังเบื่ออยู่ใช่ไหมล่ะ? จะออกไปข้องนอกอากาศก็ร้อนแทบจะละลาย นี่เลย
+      เราจัดเพลย์ลิสต์นี้มาให้คุณกับ 10 บทเพลงเพราะ ฟังสบายหู
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div class="track-box" *ngFor="let item of items">
+      <div class="track-name">
+        {{item.text}}
+      </div>
+      <div class="track-icon">
+        <img src="{{item.img}}" alt="">
+      </div>
+    </div>
+
+  </div>
+  <div class="big-circle"></div>
+
+
+</ion-content>
